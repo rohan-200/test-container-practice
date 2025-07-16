@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.example.processorservice.integration.ProcessorIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 32.54 s <<< FAILURE! -- in com.example.processorservice.integration.ProcessorIntegrationTest
+com.example.processorservice.integration.ProcessorIntegrationTest.should consume, process, and produce an event -- Time elapsed: 12.51 s <<< ERROR!
+java.lang.IllegalStateException: No records found for topic
+	at org.springframework.kafka.test.utils.KafkaTestUtils.getSingleRecord(KafkaTestUtils.java:181)
+	at com.example.processorservice.integration.ProcessorIntegrationTest.should consume, process, and produce an event(ProcessorIntegrationTest.kt:61)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+

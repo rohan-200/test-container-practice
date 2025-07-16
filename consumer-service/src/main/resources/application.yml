@@ -1,0 +1,19 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: consumer-service
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/eventsdb
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+    consumer:
+      group-id: consumer-group
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: "*"

@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.consumerservice.integration.ConsumerIntegrationTest" time="23.771" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/ubuntu/Desktop/integration_test/consumer-service/target/test-classes:/home/ubuntu/Desktop/integration_test/consumer-service/target/classes:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-data-mongodb/3.3.1/spring-boot-starter-data-mongodb-3.3.1.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter/3.3.1/spring-boot-starter-3.3.1.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot/3.3.1/spring-boot-3.3.1.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.3.1/spring-boot-autoconfigure-3.3.1.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.3.1/spring-boot-starter-logging-3.3.1.jar:/home/ubuntu/.m2/repository/ch/qos/logback/logback-classic/1.5.6/logback-classic-1.5.6.jar:/home/ubuntu/.m2/repository/ch/qos/logback/logback-core/1.5.6/logback-core-1.5.6.jar:/home/ubuntu/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.23.1/log4j-to-slf4j-2.23.1.jar:/home/ubuntu/.m2/repository/org/apache/logging/log4j/log4j-api/2.23.1/log4j-api-2.23.1.jar:/home/ubuntu/.m2/repository/org/slf4j/jul-to-slf4j/2.0.13/jul-to-slf4j-2.0.13.jar:/home/ubuntu/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/home/ubuntu/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/home/ubuntu/.m2/repository/org/mongodb/mongodb-driver-sync/5.0.1/mongodb-driver-sync-5.0.1.jar:/home/ubuntu/.m2/repository/org/mongodb/bson/5.0.1/bson-5.0.1.jar:/home/ubuntu/.m2/repository/org/mongodb/mongodb-driver-core/5.0.1/mongodb-driver-core-5.0.1.jar:/home/ubuntu/.m2/repository/org/mongodb/bson-record-codec/5.0.1/bson-record-codec-5.0.1.jar:/home/ubuntu/.m2/repository/org/springframework/data/spring-data-mongodb/4.3.1/spring-data-mongodb-4.3.1.jar:/home/ubuntu/.m2/repository/org/springframework/spring-beans/6.1.10/spring-beans-6.1.10.jar:/home/ubuntu/.m2/repository/org/springframework/spring-expression/6.1.10/spring-expression-6.1.10.jar:/home/ubuntu/.m2/repository/org/springframework/data/spring-data-commons/3.3.1/spring-data-commons-3.3.1.jar:/home/ubuntu/.m2/repository/org/slf4j/slf4j-api/2.0.13/slf4j-api-2.0.13.jar:/home/ubuntu/.m2/repository/org/springframework/kafka/spring-kafka/3.2.1/spring-kafka-3.2.1.jar:/home/ubuntu/.m2/repository/org/springframework/spring-context/6.1.10/spring-context-6.1.10.jar:/home/ubuntu/.m2/repository/org/springframework/spring-aop/6.1.10/spring-aop-6.1.10.jar:/home/ubuntu/.m2/repository/org/springframework/spring-messaging/6.1.10/spring-messaging-6.1.10.jar:/home/ubuntu/.m2/repository/org/springframework/spring-tx/6.1.10/spring-tx-6.1.10.jar:/home/ubuntu/.m2/repository/org/springframework/retry/spring-retry/2.0.6/spring-retry-2.0.6.jar:/home/ubuntu/.m2/repository/org/apache/kafka/kafka-clients/3.7.0/kafka-clients-3.7.0.jar:/home/ubuntu/.m2/repository/com/github/luben/zstd-jni/1.5.5-6/zstd-jni-1.5.5-6.jar:/home/ubuntu/.m2/repository/org/lz4/lz4-java/1.8.0/lz4-java-1.8.0.jar:/home/ubuntu/.m2/repository/org/xerial/snappy/snappy-java/1.1.10.5/snappy-java-1.1.10.5.jar:/home/ubuntu/.m2/repository/io/micrometer/micrometer-observation/1.13.1/micrometer-observation-1.13.1.jar:/home/ubuntu/.m2/repository/io/micrometer/micrometer-commons/1.13.1/micrometer-commons-1.13.1.jar:/home/ubuntu/.m2/repository/com/fasterxml/jackson/module/jackson-module-kotlin/2.17.1/jackson-module-kotlin-2.17.1.jar:/home/ubuntu/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.1/jackson-databind-2.17.1.jar:/home/ubuntu/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.1/jackson-core-2.17.1.jar:/home/ubuntu/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.1/jackson-annotations-2.17.1.jar:/home/ubuntu/.m2/repository/org/testcontainers/junit-jupiter/1.19.8/junit-jupiter-1.19.8.jar:/home/ubuntu/.m2/repository/org/testcontainers/testcontainers/1.19.8/testcontainers-1.19.8.jar:/home/ubuntu/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/home/ubuntu/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/home/ubuntu/.m2/repository/org/apache/commons/commons-compress/1.24.0/commons-compress-1.24.0.jar:/home/ubuntu/.m2/repository/org/rnorth/duct-tape/duct-tape/1.0.8/duct-tape-1.0.8.jar:/home/ubuntu/.m2/repository/com/github/docker-java/docker-java-api/3.3.6/docker-java-api-3.3.6.jar:/home/ubuntu/.m2/repository/com/github/docker-java/docker-java-transport-zerodep/3.3.6/docker-java-transport-zerodep-3.3.6.jar:/home/ubuntu/.m2/repository/com/github/docker-java/docker-java-transport/3.3.6/docker-java-transport-3.3.6.jar:/home/ubuntu/.m2/repository/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar:/home/ubuntu/.m2/repository/org/testcontainers/kafka/1.19.8/kafka-1.19.8.jar:/home/ubuntu/.m2/repository/org/testcontainers/mongodb/1.19.8/mongodb-1.19.8.jar:/home/ubuntu/.m2/repository/org/awaitility/awaitility-kotlin/4.2.1/awaitility-kotlin-4.2.1.jar:/home/ubuntu/.m2/repository/org/awaitility/awaitility/4.2.1/awaitility-4.2.1.jar:/home/ubuntu/.m2/repository/org/jetbrains/kotlin/kotlin-reflect/1.9.24/kotlin-reflect-1.9.24.jar:/home/ubuntu/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.9.24/kotlin-stdlib-1.9.24.jar:/home/ubuntu/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.3.1/spring-boot-starter-test-3.3.1.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-test/3.3.1/spring-boot-test-3.3.1.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.3.1/spring-boot-test-autoconfigure-3.3.1.jar:/home/ubuntu/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/home/ubuntu/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/home/ubuntu/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/home/ubuntu/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/home/ubuntu/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/home/ubuntu/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/home/ubuntu/.m2/repository/org/assertj/assertj-core/3.25.3/assertj-core-3.25.3.jar:/home/ubuntu/.m2/repository/net/bytebuddy/byte-buddy/1.14.17/byte-buddy-1.14.17.jar:/home/ubuntu/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/ubuntu/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/home/ubuntu/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/home/ubuntu/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/ubuntu/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/home/ubuntu/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/ubuntu/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/home/ubuntu/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/home/ubuntu/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/home/ubuntu/.m2/repository/org/mockito/mockito-core/5.11.0/mockito-core-5.11.0.jar:/home/ubuntu/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.17/byte-buddy-agent-1.14.17.jar:/home/ubuntu/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/ubuntu/.m2/repository/org/mockito/mockito-junit-jupiter/5.11.0/mockito-junit-jupiter-5.11.0.jar:/home/ubuntu/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/home/ubuntu/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/home/ubuntu/.m2/repository/org/springframework/spring-core/6.1.10/spring-core-6.1.10.jar:/home/ubuntu/.m2/repository/org/springframework/spring-jcl/6.1.10/spring-jcl-6.1.10.jar:/home/ubuntu/.m2/repository/org/springframework/spring-test/6.1.10/spring-test-6.1.10.jar:/home/ubuntu/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:/home/ubuntu/.m2/repository/io/mockk/mockk/1.9.3/mockk-1.9.3.jar:/home/ubuntu/.m2/repository/io/mockk/mockk-common/1.9.3/mockk-common-1.9.3.jar:/home/ubuntu/.m2/repository/io/mockk/mockk-dsl/1.9.3/mockk-dsl-1.9.3.jar:/home/ubuntu/.m2/repository/io/mockk/mockk-dsl-jvm/1.9.3/mockk-dsl-jvm-1.9.3.jar:/home/ubuntu/.m2/repository/io/mockk/mockk-agent-jvm/1.9.3/mockk-agent-jvm-1.9.3.jar:/home/ubuntu/.m2/repository/io/mockk/mockk-agent-api/1.9.3/mockk-agent-api-1.9.3.jar:/home/ubuntu/.m2/repository/io/mockk/mockk-agent-common/1.9.3/mockk-agent-common-1.9.3.jar:"/>
+    <property name="java.vm.vendor" value="Ubuntu"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://ubuntu.com/"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk-amd64/lib"/>
+    <property name="sun.java.command" value="/home/ubuntu/Desktop/integration_test/consumer-service/target/surefire/surefirebooter-20250716204333708_3.jar /home/ubuntu/Desktop/integration_test/consumer-service/target/surefire 2025-07-16T20-43-33_513-jvmRun1 surefire-20250716204333708_1tmp surefire_0-20250716204333708_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/ubuntu/Desktop/integration_test/consumer-service/target/test-classes:/home/ubuntu/Desktop/integration_test/consumer-service/target/classes:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-data-mongodb/3.3.1/spring-boot-starter-data-mongodb-3.3.1.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter/3.3.1/spring-boot-starter-3.3.1.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot/3.3.1/spring-boot-3.3.1.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.3.1/spring-boot-autoconfigure-3.3.1.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.3.1/spring-boot-starter-logging-3.3.1.jar:/home/ubuntu/.m2/repository/ch/qos/logback/logback-classic/1.5.6/logback-classic-1.5.6.jar:/home/ubuntu/.m2/repository/ch/qos/logback/logback-core/1.5.6/logback-core-1.5.6.jar:/home/ubuntu/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.23.1/log4j-to-slf4j-2.23.1.jar:/home/ubuntu/.m2/repository/org/apache/logging/log4j/log4j-api/2.23.1/log4j-api-2.23.1.jar:/home/ubuntu/.m2/repository/org/slf4j/jul-to-slf4j/2.0.13/jul-to-slf4j-2.0.13.jar:/home/ubuntu/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/home/ubuntu/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/home/ubuntu/.m2/repository/org/mongodb/mongodb-driver-sync/5.0.1/mongodb-driver-sync-5.0.1.jar:/home/ubuntu/.m2/repository/org/mongodb/bson/5.0.1/bson-5.0.1.jar:/home/ubuntu/.m2/repository/org/mongodb/mongodb-driver-core/5.0.1/mongodb-driver-core-5.0.1.jar:/home/ubuntu/.m2/repository/org/mongodb/bson-record-codec/5.0.1/bson-record-codec-5.0.1.jar:/home/ubuntu/.m2/repository/org/springframework/data/spring-data-mongodb/4.3.1/spring-data-mongodb-4.3.1.jar:/home/ubuntu/.m2/repository/org/springframework/spring-beans/6.1.10/spring-beans-6.1.10.jar:/home/ubuntu/.m2/repository/org/springframework/spring-expression/6.1.10/spring-expression-6.1.10.jar:/home/ubuntu/.m2/repository/org/springframework/data/spring-data-commons/3.3.1/spring-data-commons-3.3.1.jar:/home/ubuntu/.m2/repository/org/slf4j/slf4j-api/2.0.13/slf4j-api-2.0.13.jar:/home/ubuntu/.m2/repository/org/springframework/kafka/spring-kafka/3.2.1/spring-kafka-3.2.1.jar:/home/ubuntu/.m2/repository/org/springframework/spring-context/6.1.10/spring-context-6.1.10.jar:/home/ubuntu/.m2/repository/org/springframework/spring-aop/6.1.10/spring-aop-6.1.10.jar:/home/ubuntu/.m2/repository/org/springframework/spring-messaging/6.1.10/spring-messaging-6.1.10.jar:/home/ubuntu/.m2/repository/org/springframework/spring-tx/6.1.10/spring-tx-6.1.10.jar:/home/ubuntu/.m2/repository/org/springframework/retry/spring-retry/2.0.6/spring-retry-2.0.6.jar:/home/ubuntu/.m2/repository/org/apache/kafka/kafka-clients/3.7.0/kafka-clients-3.7.0.jar:/home/ubuntu/.m2/repository/com/github/luben/zstd-jni/1.5.5-6/zstd-jni-1.5.5-6.jar:/home/ubuntu/.m2/repository/org/lz4/lz4-java/1.8.0/lz4-java-1.8.0.jar:/home/ubuntu/.m2/repository/org/xerial/snappy/snappy-java/1.1.10.5/snappy-java-1.1.10.5.jar:/home/ubuntu/.m2/repository/io/micrometer/micrometer-observation/1.13.1/micrometer-observation-1.13.1.jar:/home/ubuntu/.m2/repository/io/micrometer/micrometer-commons/1.13.1/micrometer-commons-1.13.1.jar:/home/ubuntu/.m2/repository/com/fasterxml/jackson/module/jackson-module-kotlin/2.17.1/jackson-module-kotlin-2.17.1.jar:/home/ubuntu/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.1/jackson-databind-2.17.1.jar:/home/ubuntu/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.1/jackson-core-2.17.1.jar:/home/ubuntu/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.1/jackson-annotations-2.17.1.jar:/home/ubuntu/.m2/repository/org/testcontainers/junit-jupiter/1.19.8/junit-jupiter-1.19.8.jar:/home/ubuntu/.m2/repository/org/testcontainers/testcontainers/1.19.8/testcontainers-1.19.8.jar:/home/ubuntu/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/home/ubuntu/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/home/ubuntu/.m2/repository/org/apache/commons/commons-compress/1.24.0/commons-compress-1.24.0.jar:/home/ubuntu/.m2/repository/org/rnorth/duct-tape/duct-tape/1.0.8/duct-tape-1.0.8.jar:/home/ubuntu/.m2/repository/com/github/docker-java/docker-java-api/3.3.6/docker-java-api-3.3.6.jar:/home/ubuntu/.m2/repository/com/github/docker-java/docker-java-transport-zerodep/3.3.6/docker-java-transport-zerodep-3.3.6.jar:/home/ubuntu/.m2/repository/com/github/docker-java/docker-java-transport/3.3.6/docker-java-transport-3.3.6.jar:/home/ubuntu/.m2/repository/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar:/home/ubuntu/.m2/repository/org/testcontainers/kafka/1.19.8/kafka-1.19.8.jar:/home/ubuntu/.m2/repository/org/testcontainers/mongodb/1.19.8/mongodb-1.19.8.jar:/home/ubuntu/.m2/repository/org/awaitility/awaitility-kotlin/4.2.1/awaitility-kotlin-4.2.1.jar:/home/ubuntu/.m2/repository/org/awaitility/awaitility/4.2.1/awaitility-4.2.1.jar:/home/ubuntu/.m2/repository/org/jetbrains/kotlin/kotlin-reflect/1.9.24/kotlin-reflect-1.9.24.jar:/home/ubuntu/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.9.24/kotlin-stdlib-1.9.24.jar:/home/ubuntu/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.3.1/spring-boot-starter-test-3.3.1.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-test/3.3.1/spring-boot-test-3.3.1.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.3.1/spring-boot-test-autoconfigure-3.3.1.jar:/home/ubuntu/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/home/ubuntu/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/home/ubuntu/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/home/ubuntu/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/home/ubuntu/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/home/ubuntu/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/home/ubuntu/.m2/repository/org/assertj/assertj-core/3.25.3/assertj-core-3.25.3.jar:/home/ubuntu/.m2/repository/net/bytebuddy/byte-buddy/1.14.17/byte-buddy-1.14.17.jar:/home/ubuntu/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/ubuntu/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/home/ubuntu/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/home/ubuntu/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/ubuntu/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/home/ubuntu/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/ubuntu/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/home/ubuntu/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/home/ubuntu/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/home/ubuntu/.m2/repository/org/mockito/mockito-core/5.11.0/mockito-core-5.11.0.jar:/home/ubuntu/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.17/byte-buddy-agent-1.14.17.jar:/home/ubuntu/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/ubuntu/.m2/repository/org/mockito/mockito-junit-jupiter/5.11.0/mockito-junit-jupiter-5.11.0.jar:/home/ubuntu/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/home/ubuntu/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/home/ubuntu/.m2/repository/org/springframework/spring-core/6.1.10/spring-core-6.1.10.jar:/home/ubuntu/.m2/repository/org/springframework/spring-jcl/6.1.10/spring-jcl-6.1.10.jar:/home/ubuntu/.m2/repository/org/springframework/spring-test/6.1.10/spring-test-6.1.10.jar:/home/ubuntu/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:/home/ubuntu/.m2/repository/io/mockk/mockk/1.9.3/mockk-1.9.3.jar:/home/ubuntu/.m2/repository/io/mockk/mockk-common/1.9.3/mockk-common-1.9.3.jar:/home/ubuntu/.m2/repository/io/mockk/mockk-dsl/1.9.3/mockk-dsl-1.9.3.jar:/home/ubuntu/.m2/repository/io/mockk/mockk-dsl-jvm/1.9.3/mockk-dsl-jvm-1.9.3.jar:/home/ubuntu/.m2/repository/io/mockk/mockk-agent-jvm/1.9.3/mockk-agent-jvm-1.9.3.jar:/home/ubuntu/.m2/repository/io/mockk/mockk-agent-api/1.9.3/mockk-agent-api-1.9.3.jar:/home/ubuntu/.m2/repository/io/mockk/mockk-agent-common/1.9.3/mockk-agent-common-1.9.3.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/ubuntu"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-04-15"/>
+    <property name="java.home" value="/usr/lib/jvm/java-21-openjdk-amd64"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/ubuntu/Desktop/integration_test/consumer-service"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="/home/ubuntu/Desktop/integration_test/consumer-service/target/surefire/surefirebooter-20250716204333708_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.7+6-Ubuntu-0ubuntu125.04"/>
+    <property name="user.name" value="ubuntu"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.14.0-23-generic"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/ubuntu/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-21"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="21.0.7"/>
+    <property name="user.dir" value="/home/ubuntu/Desktop/integration_test/consumer-service"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="212413"/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Ubuntu"/>
+    <property name="java.vm.version" value="21.0.7+6-Ubuntu-0ubuntu125.04"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+    <property name="LOGGED_APPLICATION_NAME" value="[consumer-service] "/>
+  </properties>
+  <testcase name="should consume message and save to mongodb" classname="com.example.consumerservice.integration.ConsumerIntegrationTest" time="2.498">
+    <system-out><![CDATA[20:43:35.327 [main] INFO org.testcontainers.images.PullPolicy -- Image pull policy will be performed by: DefaultPullPolicy()
+20:43:35.334 [main] INFO org.testcontainers.utility.ImageNameSubstitutor -- Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+20:43:35.866 [main] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy -- Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+20:43:36.432 [main] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy -- Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
+20:43:36.434 [main] INFO org.testcontainers.DockerClientFactory -- Docker host IP address is localhost
+20:43:36.467 [main] INFO org.testcontainers.DockerClientFactory -- Connected to docker: 
+  Server Version: 28.3.2
+  API Version: 1.51
+  Operating System: Ubuntu 25.04
+  Total Memory: 7166 MB
+20:43:36.505 [main] INFO tc.testcontainers/ryuk:0.7.0 -- Creating container for image: testcontainers/ryuk:0.7.0
+20:43:36.514 [main] INFO org.testcontainers.utility.RegistryAuthLocator -- Failure when attempting to lookup auth config. Please ignore if you don't have images in an authenticated registry. Details: (dockerImageName: testcontainers/ryuk:0.7.0, configFile: /home/ubuntu/.docker/config.json, configEnv: DOCKER_AUTH_CONFIG). Falling back to docker-java default behaviour. Exception message: Status 404: No config supplied. Checked in order: /home/ubuntu/.docker/config.json (file not found), DOCKER_AUTH_CONFIG (not set)
+20:43:36.770 [main] INFO tc.testcontainers/ryuk:0.7.0 -- Container testcontainers/ryuk:0.7.0 is starting: 1669094b0a0e8b77fae5519b3aebf805064a219c3b760224acf4a6c7d203606c
+20:43:37.392 [main] INFO tc.testcontainers/ryuk:0.7.0 -- Container testcontainers/ryuk:0.7.0 started in PT0.887096554S
+20:43:37.400 [main] INFO org.testcontainers.utility.RyukResourceReaper -- Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+20:43:37.401 [main] INFO org.testcontainers.DockerClientFactory -- Checking the system...
+20:43:37.401 [main] INFO org.testcontainers.DockerClientFactory -- ✔︎ Docker server version should be at least 1.6.0
+20:43:37.403 [main] INFO tc.confluentinc/cp-kafka:7.6.0 -- Creating container for image: confluentinc/cp-kafka:7.6.0
+20:43:37.448 [main] INFO tc.confluentinc/cp-kafka:7.6.0 -- Container confluentinc/cp-kafka:7.6.0 is starting: 34b819f3c8546359eb336246eca38dffe0e1924f4ce25724d75cd5a61829d999
+20:43:47.717 [main] INFO tc.confluentinc/cp-kafka:7.6.0 -- Container confluentinc/cp-kafka:7.6.0 started in PT10.314244322S
+20:43:47.718 [main] INFO tc.mongo:7.0 -- Creating container for image: mongo:7.0
+20:43:47.794 [main] INFO tc.mongo:7.0 -- Container mongo:7.0 is starting: 095a21c5cc379089e9aadb39b59a711a6423aeef054155665a52afa32499d3c5
+20:43:49.278 [main] INFO tc.mongo:7.0 -- Container mongo:7.0 started in PT1.560192203S
+20:43:51.472 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.consumerservice.integration.ConsumerIntegrationTest]: ConsumerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20:43:51.631 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.consumerservice.ConsumerServiceApplication for test class com.example.consumerservice.integration.ConsumerIntegrationTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.1)
+
+2025-07-16T20:43:52.343+05:30  INFO 212413 --- [consumer-service] [           main] c.e.c.i.ConsumerIntegrationTest          : Starting ConsumerIntegrationTest using Java 21.0.7 with PID 212413 (started by ubuntu in /home/ubuntu/Desktop/integration_test/consumer-service)
+2025-07-16T20:43:52.346+05:30  INFO 212413 --- [consumer-service] [           main] c.e.c.i.ConsumerIntegrationTest          : No active profile set, falling back to 1 default profile: "default"
+2025-07-16T20:43:52.948+05:30  INFO 212413 --- [consumer-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-07-16T20:43:53.019+05:30  INFO 212413 --- [consumer-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 1 MongoDB repository interface.
+2025-07-16T20:43:54.009+05:30  INFO 212413 --- [consumer-service] [           main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.0.1"}, "os": {"type": "Linux", "name": "Linux", "architecture": "amd64", "version": "6.14.0-23-generic"}, "platform": "Java/Ubuntu/21.0.7+6-Ubuntu-0ubuntu125.04"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@4d2f9e3c, com.mongodb.Jep395RecordCodecProvider@686b1e2d, com.mongodb.KotlinCodecProvider@6e7e0259]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:32823], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2025-07-16T20:43:54.068+05:30  INFO 212413 --- [consumer-service] [localhost:32823] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:32823, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=54995014, setName='docker-rs', canonicalAddress=095a21c5cc37:27017, hosts=[095a21c5cc37:27017], passives=[], arbiters=[], primary='095a21c5cc37:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000001, setVersion=1, topologyVersion=TopologyVersion{processId=6877c1ac3b61d27f2414347b, counter=6}, lastWriteDate=Wed Jul 16 20:43:50 IST 2025, lastUpdateTimeNanos=25337736060532}
+2025-07-16T20:43:55.337+05:30  INFO 212413 --- [consumer-service] [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [PLAINTEXT://localhost:32822]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-consumer-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = consumer-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2025-07-16T20:43:55.399+05:30  INFO 212413 --- [consumer-service] [           main] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2025-07-16T20:43:55.666+05:30  INFO 212413 --- [consumer-service] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.7.0
+2025-07-16T20:43:55.667+05:30  INFO 212413 --- [consumer-service] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 2ae524ed625438c5
+2025-07-16T20:43:55.667+05:30  INFO 212413 --- [consumer-service] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1752678835664
+2025-07-16T20:43:55.673+05:30  INFO 212413 --- [consumer-service] [           main] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-consumer-group-1, groupId=consumer-group] Subscribed to topic(s): processed-data-topic
+2025-07-16T20:43:55.695+05:30  INFO 212413 --- [consumer-service] [           main] c.e.c.i.ConsumerIntegrationTest          : Started ConsumerIntegrationTest in 3.815 seconds (process running for 21.887)
+2025-07-16T20:43:56.518+05:30  WARN 212413 --- [consumer-service] [ntainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-consumer-group-1, groupId=consumer-group] Error while fetching metadata with correlation id 2 : {processed-data-topic=LEADER_NOT_AVAILABLE}
+2025-07-16T20:43:56.523+05:30  INFO 212413 --- [consumer-service] [ntainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-consumer-group-1, groupId=consumer-group] Cluster ID: X7PXpeFBSaWcz6A8LJNcoA
+2025-07-16T20:43:56.789+05:30  WARN 212413 --- [consumer-service] [ntainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-consumer-group-1, groupId=consumer-group] Error while fetching metadata with correlation id 5 : {processed-data-topic=LEADER_NOT_AVAILABLE}
+2025-07-16T20:43:57.125+05:30  INFO 212413 --- [consumer-service] [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-consumer-group-1, groupId=consumer-group] Discovered group coordinator localhost:32822 (id: 2147483646 rack: null)
+2025-07-16T20:43:57.131+05:30  INFO 212413 --- [consumer-service] [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-consumer-group-1, groupId=consumer-group] (Re-)joining group
+2025-07-16T20:43:57.207+05:30  INFO 212413 --- [consumer-service] [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-consumer-group-1, groupId=consumer-group] Request joining group due to: need to re-join with the given member-id: consumer-consumer-group-1-2703a39a-5713-47aa-86bc-27954bb5a512
+2025-07-16T20:43:57.209+05:30  INFO 212413 --- [consumer-service] [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-consumer-group-1, groupId=consumer-group] (Re-)joining group
+2025-07-16T20:43:57.263+05:30  INFO 212413 --- [consumer-service] [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-consumer-group-1, groupId=consumer-group] Successfully joined group with generation Generation{generationId=1, memberId='consumer-consumer-group-1-2703a39a-5713-47aa-86bc-27954bb5a512', protocol='range'}
+2025-07-16T20:43:57.293+05:30  INFO 212413 --- [consumer-service] [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-consumer-group-1, groupId=consumer-group] Finished assignment for group at generation 1: {consumer-consumer-group-1-2703a39a-5713-47aa-86bc-27954bb5a512=Assignment(partitions=[processed-data-topic-0])}
+2025-07-16T20:43:57.442+05:30  INFO 212413 --- [consumer-service] [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-consumer-group-1, groupId=consumer-group] Successfully synced group in generation Generation{generationId=1, memberId='consumer-consumer-group-1-2703a39a-5713-47aa-86bc-27954bb5a512', protocol='range'}
+2025-07-16T20:43:57.443+05:30  INFO 212413 --- [consumer-service] [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-consumer-group-1, groupId=consumer-group] Notifying assignor about the new Assignment(partitions=[processed-data-topic-0])
+2025-07-16T20:43:57.449+05:30  INFO 212413 --- [consumer-service] [ntainer#0-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-consumer-group-1, groupId=consumer-group] Adding newly assigned partitions: processed-data-topic-0
+2025-07-16T20:43:57.487+05:30  INFO 212413 --- [consumer-service] [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-consumer-group-1, groupId=consumer-group] Found no committed offset for partition processed-data-topic-0
+2025-07-16T20:43:57.506+05:30  INFO 212413 --- [consumer-service] [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-consumer-group-1, groupId=consumer-group] Found no committed offset for partition processed-data-topic-0
+2025-07-16T20:43:57.520+05:30  INFO 212413 --- [consumer-service] [           main] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [PLAINTEXT://localhost:32822]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-service-producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
+
+2025-07-16T20:43:57.524+05:30  INFO 212413 --- [consumer-service] [           main] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2025-07-16T20:43:57.551+05:30  INFO 212413 --- [consumer-service] [ntainer#0-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-consumer-group-1, groupId=consumer-group] Resetting offset for partition processed-data-topic-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:32822 (id: 1 rack: null)], epoch=0}}.
+2025-07-16T20:43:57.558+05:30  INFO 212413 --- [consumer-service] [           main] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=consumer-service-producer-1] Instantiated an idempotent producer.
+2025-07-16T20:43:57.601+05:30  INFO 212413 --- [consumer-service] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.7.0
+2025-07-16T20:43:57.601+05:30  INFO 212413 --- [consumer-service] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 2ae524ed625438c5
+2025-07-16T20:43:57.602+05:30  INFO 212413 --- [consumer-service] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1752678837601
+2025-07-16T20:43:57.612+05:30  INFO 212413 --- [consumer-service] [ntainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : consumer-group: partitions assigned: [processed-data-topic-0]
+2025-07-16T20:43:57.633+05:30  INFO 212413 --- [consumer-service] [vice-producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=consumer-service-producer-1] Cluster ID: X7PXpeFBSaWcz6A8LJNcoA
+2025-07-16T20:43:57.776+05:30  INFO 212413 --- [consumer-service] [vice-producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=consumer-service-producer-1] ProducerId set to 0 with epoch 0
+Saving event to MongoDB: DataEventDocument(id=mongo-test-123, content=final data, timestamp=1752678837479, processed=true, processedBy=processor-service)
+]]></system-out>
+    <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (/home/ubuntu/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.17/byte-buddy-agent-1.14.17.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+  </testcase>
+</testsuite>
